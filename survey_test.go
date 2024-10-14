@@ -1,9 +1,11 @@
-package bloomreachQaAssignment
+package qa_assigment
 
 import (
 	"fmt"
+	"log"
 	"net/http"
 	"net/url"
+	"os"
 	"testing"
 	"time"
 
@@ -11,6 +13,22 @@ import (
 )
 
 const timeout = 10 * time.Second
+
+var (
+	apiKey    = ""
+	apiSecret = ""
+)
+
+func init() {
+	apiKey = os.Getenv("API_KEY")
+	if apiKey == "" {
+		log.Fatal("Environment variable API_KEY is not set.")
+	}
+	apiSecret = os.Getenv("API_SECRET")
+	if apiSecret == "" {
+		log.Fatal("Environment variable API_SECRET is not set.")
+	}
+}
 
 func Test_Survey(t *testing.T) {
 	tests := []struct {

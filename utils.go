@@ -1,4 +1,4 @@
-package bloomreachQaAssignment
+package qa_assigment
 
 import (
 	"bytes"
@@ -16,8 +16,6 @@ import (
 
 const (
 	customerExpUrl = "https://gqa.api.gdev.exponea.com/data/v2/projects/6f521150-d92d-11ed-a284-de49e5a76b0b/customers/export-one"
-	apiKey         = "fbiiqlwwf5gnnuxns77fkxfkoysnl6f0nhf21xixykxxsiia9c341x4ewr4w30nb"
-	apiSecret      = "fypwdlyoi2sou87lvmtl80nmf68y6hxfngigssul62ojsf2qxmneiag3xo4wnpfg"
 	customerID     = "customer-7d3445"
 )
 
